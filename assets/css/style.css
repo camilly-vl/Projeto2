@@ -1,0 +1,129 @@
+/* ------------------------- */
+/* copyright 2023 @Camilly
+/* ------------------------- */
+
+/* ------------------------- */
+/* CUSTOM PROPERTY
+/* ------------------------- */
+
+:root {
+  --corfundo: hsl(224, 20%, 71%);
+  --cor2: hsl(170, 21%, 5%);
+  --cor3: hsl(228, 13%, 15%);
+  --cor4: hsl(207, 19%, 11%);
+  --cor5: hsl(0, 3%, 80%);
+  --cor6: hsl(229, 15%, 21%);
+  --cor7: hsl(216, 22%, 18%);
+  --cor8: hsl(0, 7%, 88%);
+  --cor9: hsl(57, 97%, 45%);
+  --cor10: hsl(253, 21%, 13%);
+  --cor11: hsl(0, 0%, 74%);
+  --cor12: hsl(0, 100%, 100%);
+  --cor13: hsl(0, 0%, 0%);
+  --cor14: hsl(0, 0%, 20%);
+  
+  /* Fonte */
+    --ff-josefin:'Josefin Sans', sans-serif;
+  
+    --fs-1: 36px;
+    --fs-2: 32px;
+    --fs-3: 30px;
+    --fs-4: 24px;
+    --fs-5: 20px;
+    --fs-6: 18px;
+    --fs-7: 16px;
+    --fs-8: 15px;
+    --fs-9: 14px;
+    --fs-10: 13px;
+    --fs-11: 12px;
+    --fs-12: 11px;
+  
+    --fw-500: 500;
+    --fw-700: 700;
+  
+  /* Transition */
+  --transition1: 0.15s ease;
+  --transition2: 0.25s ease-in;
+  
+  /* Spacing */
+  --section-padding: 100px;
+  }
+  
+  /* ---------------------------*/
+  /* RESET
+  /* ---------------------------*/
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  a,
+  img,
+  span,
+  input,
+  buttons,
+  ion-icon {
+    display: block;
+  }
+  html {
+    font-family: var(--ff-josefin); /*chamei variavel*/
+    scroll-behavior: smooth; /*quando o scrol do mouse rolar, será lento/suave*/
+  }
+  body {
+    background-color: var(--corfundo);
+  }
+  body.active {
+    overflow: hidden; /*desativa o scrol, para esconder o resto da pagina que sobra*/
+  }
+
+  .container{
+    padding: 15px;
+  }
+
+   /* ---------------------------*/
+  /* HEADER
+  /* ---------------------------*/
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    transition: var(--transition2);
+    z-index: 2;
+}
+
+.header:active{
+    background: var(--cor9);
+    padding: 20px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-actions{
+  display: none;
+}
+
+.bnt-mobile ion-icon{
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
